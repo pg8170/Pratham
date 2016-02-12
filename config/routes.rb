@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'electrical', to:'calculator#electrical'
+
+  get 'security', to:'calculator#security'
+
   root 'home#default'
 
   get 'phone' ,to: 'flat#phone'
