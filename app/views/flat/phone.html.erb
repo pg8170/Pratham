@@ -1,0 +1,17 @@
+<h1 align="center">Flat Owner Details</h1>
+
+<%= grid(@tasks_grid) do |g|
+
+  g.column name: 'FlatName',attribute: 'flat_number' do |task|
+    task.flat_number
+  end
+
+  g.column name: 'OwnerName' do |task|
+    task.owner_name
+  end
+
+  g.column name: 'PhoneNumber' do |task|
+    task.phone_no
+  end
+
+end -%>

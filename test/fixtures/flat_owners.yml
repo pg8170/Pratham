@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flat_number: MyString
+  onwer_name: MyString
+  phone_no: 
+
+two:
+  flat_number: MyString
+  onwer_name: MyString
+  phone_no: 
