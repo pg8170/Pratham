@@ -1,11 +1,11 @@
-<%= form_for :Calcuate,:html => {class: "form-horizontal", role: "form"} do |f|%>
+<%= form_for :calculator, :html => {class: "form-horizontal", role: "form"} ,url: { action: :electrical }, method: :get do |f|%>
 		<div class = 'col-xs-12' >
 		<div class ="form-group">
 		<div class = "control-lable col-sm-2">
 			<%=f.label :Amount%>
 		</div>
 		<div class="col-sm-8">
-			<%=f.text_field :username, class: "form-control", placeholder: "Enter Common Electical Bill Amount",autofocus: true%>
+			<%=number_field_tag :a, params[:a], class: "form-control", placeholder: "Enter Common Electical Bill Amount",autofocus: true%>
 		</div>
 		</div>
 		<div class ="form-group">
@@ -14,4 +14,5 @@
 		</div>
 		</div>
 <%end%>
+
 </div>

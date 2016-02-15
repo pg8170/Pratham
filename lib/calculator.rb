@@ -1,10 +1,5 @@
-# app/lib/calculator.rb
 class Calculator
-  def self.sum(a, b)
-    a.to_i + b.to_i
-  end
-
-  def self.subtr(a, b)
-    a.to_i - b.to_i
+  def self.divide(a,b)
+    a.to_f / b.to_f
   end
 end

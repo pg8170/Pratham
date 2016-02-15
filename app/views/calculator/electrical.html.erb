@@ -1,1 +1,103 @@
+<h1 align ="center">Calculate Common Electrical Share</h1>
 <%= render 'form'%>
+
+
+<div class="share">
+	<h4>Share per Flat is: <span style="background-color:yellow"><%=@results%></span></h4>
+</div>
+
+
+
+<h1 align="center">Listing Common Electrical Share</h1>
+<table class=" table table-bordered" data-sort-name="name" data-sort-order="desc">
+
+  <thead>
+    <tr>
+    	<th data-field="FlatNumber" data-sortable="true">FlatNumber</th>
+        <th data-field="age" data-sortable="true">ShareAmount(Rs)</th>
+    </tr>
+  </thead>
+
+   <tbody>  
+
+      <tr>
+        <td>G1</td>
+        <td><%=(1134*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>G2</td>
+        <td><%=(1129*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>G3</td>
+        <td><%=(1285*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>G4</td>
+        <td><%=(1037*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>F1</td>
+        <td><%=(1134*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>F2</td>
+        <td><%=(1129*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>F3</td>
+        <td><%=(1285*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>F4</td>
+        <td><%=(1037*@results).round(2)%></td>
+      </tr>
+
+            <tr>
+        <td>S1</td>
+        <td><%=(1134*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>S2</td>
+        <td><%=(1129*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>S3</td>
+        <td><%=(1285*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>S4</td>
+        <td><%=(1037*@results).round(2)%></td>
+      </tr>
+
+      <tr>
+        <td>T1</td>
+        <td><%=(1134*@results).round(2)%></td>
+      </tr>
+
+        <tr>
+        <td>T2</td>
+        <td><%=(1129*@results).round(2)%></td>
+        </tr>
+
+        <tr>
+        <td>T3</td>
+        <td><%=(1285*@results).round(2)%></td>
+        </tr>
+
+       <tr>
+        <td>T4</td>
+        <td><%=(1037*@results).round(2)%></td>
+      </tr>
+      </tbody>
+      </table>
