@@ -1,0 +1,2 @@
+class ElectricalexpensesController < ApplicationController
+end

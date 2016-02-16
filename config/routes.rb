@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'sqfeet' ,to: 'flat#sqfeet'
 
+  resources :electricalexpenses
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
