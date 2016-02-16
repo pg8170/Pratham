@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160212074334) do
+ActiveRecord::Schema.define(version: 20160216101641) do
+
+  create_table "electricalexpenses", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.string   "amount",      limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "month",       limit: 255
+  end
 
   create_table "flat_owners", force: :cascade do |t|
     t.string   "flat_number", limit: 255
