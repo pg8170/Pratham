@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'sqfeet' ,to: 'flat#sqfeet'
 
  resources :electricalexpenses
+ resources :otherexpenses
 
 
 

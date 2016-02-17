@@ -1,0 +1,26 @@
+</br></br>
+<%= link_to "New Other Expense", new_otherexpense_path, class: "btn btn-primary" %>
+
+<h1 align="center">Listing Common Electrical Share</h1>
+<table class=" table table-bordered" data-sort-name="name" data-sort-order="desc">
+  <thead>
+    <tr>
+    	<th data-field="Name" data-sortable="true">Name</th>
+      <th data-field="Description" data-sortable="true">Description</th>
+      <th data-field="Amount" data-sortable="true">Amount(Rs)</th>
+      <th data-field="Month" data-sortable="true">Month</th>
+    </tr>
+  </thead>
+
+   <tbody> 
+   <% obj.each do |expense| %> 
+
+      <tr>
+      <td><%=expense.name%></td>
+      <td><%=expense.description%></td>  
+      <td><%=expense.amount%></td> 
+      <td><%=expense.month%></td>       
+      </tr>
+  <%end%>      
+  </tbody>
+</table>
