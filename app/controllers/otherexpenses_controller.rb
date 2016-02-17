@@ -17,7 +17,8 @@ def create
     @expenses = Otherexpense.new(expenses_params)
 
     if @expenses.save
-      redirect_to otherexpenses_path, notice: "The expense has been uploaded."
+    flash[:success] = "Otherexpense has been successfully updated"
+     redirect_to otherexpenses_path
     else
       render "new"
     end

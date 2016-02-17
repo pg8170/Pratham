@@ -17,7 +17,8 @@ def create
     @expenses = Electricalexpense.new(expenses_params)
 
     if @expenses.save
-      redirect_to electricalexpenses_path, notice: "The expense has been uploaded."
+      flash[:success] = "Electricalexpense has been successfully updated"
+      redirect_to electricalexpenses_path
     else
       render "new"
     end
