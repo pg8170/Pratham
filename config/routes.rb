@@ -10,8 +10,13 @@ Rails.application.routes.draw do
 
   get 'sqfeet' ,to: 'flat#sqfeet'
 
+  get 'signup',to:'users#new'
+  resources :users, except: [:new]
+
  resources :electricalexpenses
  resources :otherexpenses
+
+
 
 
 
