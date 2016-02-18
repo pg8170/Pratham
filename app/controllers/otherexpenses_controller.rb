@@ -9,7 +9,7 @@ def new
 end
 
 def show
-
+  
 end
 
 
@@ -27,7 +27,8 @@ def create
 def destroy
     @expenses = Otherexpense.find(params[:id])
     @expenses.destroy
-    redirect_to otherexpense_path, notice:  "The expense has been deleted."
+    redirect_to otherexpenses_path
+    flash[:success] =  "The expense has been deleted."
  end
 
  private

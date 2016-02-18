@@ -27,7 +27,7 @@ def create
 def destroy
     @expenses = Electricalexpense.find(params[:id])
     @expenses.destroy
-    redirect_to electricalexpenses_path, notice:  "The expense has been deleted."
+    redirect_to electricalexpense_path, notice:  "The expense has been deleted."
  end
 
  private
