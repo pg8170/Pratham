@@ -1,5 +1,5 @@
 </br></br>
-<%if logged_in?%>
+<%if logged_in? && current_user.admin?%>
 <%= link_to "New Other Expense", new_otherexpense_path, class: "btn btn-primary" %>
 <%end%>
 
@@ -11,7 +11,7 @@
       <th data-field="Description" data-sortable="true">Description</th>
       <th data-field="Amount" data-sortable="true">Amount(Rs)</th>
       <th data-field="Month" data-sortable="true">Month</th>
-      <%if logged_in?%>
+      <%if logged_in? && current_user.admin?%>
       <th data-field="Action" data-sortable="true">Action</th>
       <%end%>
     </tr>
@@ -25,7 +25,7 @@
       <td><%=expense.description%></td>  
       <td><%=expense.amount%></td> 
       <td><%=expense.month%></td>
-      <%if logged_in?%>
+      <%if logged_in? && current_user.admin?%>
       <td>
        <%= link_to "Delete expense", otherexpense_path(expense), method: :delete,
             data: {confirm: "Are you sure you want to delete the expense?"},
